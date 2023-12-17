@@ -1,0 +1,13 @@
+h1 {
+  letter-spacing: 2px;
+}
+
+i {
+  font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+  .contact-input {
+    width: 65%;
+  }
+}

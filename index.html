@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Agency</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+      <div class="container">
+        <!-- logo -->
+        <a href="#" class="navbar-brand">Digital Agency</a>
+        <!-- toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- navlinks -->
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item me-4">
+              <a href="o-nas.html" class="nav-link">O nás</a>
+            </li>
+            <li class="nav-item me-4">
+              <a href="portfolio.html" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="kontakt.html" class="nav-link">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+      <div class="container">
+        <div class="d-sm-flex justify-content-between align-items-center">
+          <div>
+            <h1 class="text-uppercase">Muneri</h1>
+            <p class="lead my-4">Web. Motion Graphics. VR.</p>
+            <button class="btn btn-primary btn-lg">Kontakt</button>
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src="images/computer.svg"
+            alt="Digital Illustratiton of People Making Website"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- nezávazný kontakt -->
+    <section class="bg-primary text-light p-5">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h3 class="mb-3 mb-md-0">Buďme v kontaktu</h3>
+          <!-- input group -->
+          <div class="input-group contact-input">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Zadejte e-mail"
+              aria-label="Zadejte e-mail"
+              aria-describedby="button-addon2"
+            />
+            <button class="btn btn-dark" type="button" id="button-addon2">
+              Odeslat
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- o nás -->
+    <section id="o-nas" class="p-5">
+      <div class="container">
+        <div class="row justify-content-between alight-items-center m-2">
+          <div class="col-md mr-4 mb-4 mb-md-0">
+            <img
+              class="img-fluid"
+              src="images/people_programming.svg"
+              alt="Picture of people programming"
+            />
+          </div>
+          <div class="col-md">
+            <h2>Kdo jsme?</h2>
+            <p class="lead">
+              Jsme digitální agentura propojující podniky se světem.
+            </p>
+            <p>
+              Zajímá nás vytváření inovativních webových stránek a poutavých
+              infografik. Spojujeme kreativitu s technickým know-how pro
+              výraznou digitální prezentaci. Vašemu příběhu dáváme podobu, aby
+              vynikl online.
+            </p>
+            <a href="o-nas.html" class="btn btn-primary mt-3">Chci vědět víc</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- nabídka služeb -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row text-center gy-4">
+          <!-- card 1 -->
+          <div class="col-md d-flex">
+            <div class="card bg-dark text-light flex-fill">
+              <div class="card-body text-center d-grid align-items-center">
+                <div class="mb-3"><i class="bi bi-laptop"></i></div>
+                <h4 class="card-title mb-3">Tvorba Webových Stránek</h4>
+                <p class="card-text">
+                  Hledáte webové stránky pro svůj podnik a pro vynikající
+                  digitální prezentaci?
+                </p>
+                <a href="portfolio.html" class="btn btn-primary"
+                  >Zjistěte víc</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div class="col-md d-flex">
+            <div class="card bg-dark text-light flex-fill">
+              <div class="card-body text-center d-grid align-items-center">
+                <div class="mb-3"><i class="bi bi-easel"></i></div>
+                <h4 class="card-title mb-3">Infografiky, firemní prezentace</h4>
+                <p class="card-text">
+                  Chcete, aby klienti lépe pochopili váš unikátní příběh skrze
+                  poutavé infografiky?
+                </p>
+                <a href="portfolio.html" class="btn btn-primary"
+                  >Zjistěte víc</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div class="col-md d-flex">
+            <div class="card bg-dark text-light flex-fill">
+              <div class="card-body text-center d-grid align-items-center">
+                <div class="mb-3"><i class="bi bi-badge-vr"></i></div>
+                <h4 class="card-title mb-3">VR prohlídky nemovitostí</h4>
+                <p class="card-text">
+                  Ať už pronajímáte luxusní Airbnb nebo jste hráčem na realitním
+                  poli, toužíte vyniknout?
+                </p>
+                <a href="portfolio.html" class="btn btn-primary"
+                  >Zjistěte víc</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- kontakt -->
+    <section id="o-nas" class="p-5">
+      <div class="container">
+        <div class="row justify-content-between alight-items-center m-2">
+          <div class="col-md">
+            <h2>Napiště nám</h2>
+            <p class="lead">
+              Máte nějaký projekt na mysli nebo nás chcete lépe poznat? Napište
+              nám! Jsme tu pro vás a rádi vám pomůžeme propojit váš podnik s
+              digitálním světem. Vaše myšlenky nás zajímají, tak neváhejte se s
+              námi podělit o své představy. Odpovíme vám co nejdříve!
+            </p>
+            <a href="kontakt.html" class="btn btn-primary mt-3"
+              >Kontaktujte nás</a
+            >
+          </div>
+
+          <div class="col-md mr-4 mb-4 mb-md-0">
+            <img
+              class="img-fluid"
+              src="images/person_text.svg"
+              alt="Picture of people programming"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- javascript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

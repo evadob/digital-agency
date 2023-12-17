@@ -11,7 +11,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="style.css" />
     <title>Agency</title>
@@ -20,7 +20,9 @@
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
       <div class="container">
         <!-- logo -->
-        <a href="#" class="navbar-brand">Digital Agency</a>
+        <a href="#" class="navbar-brand"
+          ><i class="bi bi-caret-right custom-icon-sm"></i> Digital Agency</a
+        >
         <!-- toggle button -->
         <button
           class="navbar-toggler"
@@ -34,7 +36,7 @@
         <div class="collapse navbar-collapse" id="navmenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item me-4">
-              <a href="o-nas.html" class="nav-link">O nás</a>
+              <a href="#o-nas" class="nav-link">O nás</a>
             </li>
             <li class="nav-item me-4">
               <a href="portfolio.html" class="nav-link">Portfolio</a>
@@ -52,14 +54,21 @@
       <div class="container">
         <div class="d-sm-flex justify-content-between align-items-center">
           <div>
-            <h1 class="text-uppercase">Muneri</h1>
+            <h1 class="text-uppercase">Digitální agentura</h1>
             <p class="lead my-4">Web. Motion Graphics. VR.</p>
-            <button class="btn btn-primary btn-lg">Kontakt</button>
+            <!-- button for contact -->
+            <button
+              class="btn btn-primary btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#contact-us"
+            >
+              Kontaktujte nás
+            </button>
           </div>
           <img
             class="img-fluid w-50 d-none d-sm-block"
             src="images/computer.svg"
-            alt="Digital Illustratiton of People Making Website"
+            alt="Digital Illustratiton of a Computer"
           />
         </div>
       </div>
@@ -129,9 +138,7 @@
                   Hledáte webové stránky pro svůj podnik a pro vynikající
                   digitální prezentaci?
                 </p>
-                <a href="portfolio.html" class="btn btn-primary"
-                  >Zjistěte víc</a
-                >
+                <a href="#" class="btn btn-primary">Zjistěte víc</a>
               </div>
             </div>
           </div>
@@ -146,9 +153,7 @@
                   Chcete, aby klienti lépe pochopili váš unikátní příběh skrze
                   poutavé infografiky?
                 </p>
-                <a href="portfolio.html" class="btn btn-primary"
-                  >Zjistěte víc</a
-                >
+                <a href="#" class="btn btn-primary">Zjistěte víc</a>
               </div>
             </div>
           </div>
@@ -163,9 +168,95 @@
                   Ať už pronajímáte luxusní Airbnb nebo jste hráčem na realitním
                   poli, toužíte vyniknout?
                 </p>
-                <a href="portfolio.html" class="btn btn-primary"
-                  >Zjistěte víc</a
-                >
+                <a href="#" class="btn btn-primary">Zjistěte víc</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- accordion faq -->
+    <section id="questions" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Často kladené otázky</h2>
+        <div class="accordion accordion-flush" id="questions">
+          <!-- question 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-one"
+                aria-expanded="false"
+                aria-controls="question-one"
+              >
+                Jaká je průměrná doba vytvoření webových stránek?
+              </button>
+            </h2>
+            <div
+              id="question-one"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                > Průměrná doba závisí na rozsahu projektu. Většinou se pohybuje
+                mezi 2 až 4 týdny od schválení návrhu.
+              </div>
+            </div>
+          </div>
+          <!-- question 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-two"
+                aria-expanded="false"
+                aria-controls="question-two"
+              >
+                Jakým způsobem pomůžete mému podniku vyniknout online?
+              </button>
+            </h2>
+            <div
+              id="question-two"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                > Naše agentura kombinuje kreativitu s technickým know-how.
+                Vytváříme moderní webové stránky, které reflektují jedinečný
+                příběh vašeho podniku. Používáme inovativní design a strategie
+                pro zdůraznění vaší digitální přítomnosti.
+              </div>
+            </div>
+          </div>
+          <!-- question 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-three"
+                aria-expanded="false"
+                aria-controls="question-three"
+              >
+                Jsou infografiky vhodné pro všechny druhy podniků?
+              </button>
+            </h2>
+            <div
+              id="question-three"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                > Ano, infografiky jsou efektivním nástrojem pro vizualizaci
+                informací a oslovují široké publikum. Přizpůsobujeme je potřebám
+                každého klienta, aby efektivně komunikovaly klíčové aspekty
+                jejich příběhu a nabídky.
               </div>
             </div>
           </div>
@@ -174,7 +265,7 @@
     </section>
 
     <!-- kontakt -->
-    <section id="o-nas" class="p-5">
+    <section id="kontakt" class="p-5">
       <div class="container">
         <div class="row justify-content-between alight-items-center m-2">
           <div class="col-md">
@@ -182,12 +273,9 @@
             <p class="lead">
               Máte nějaký projekt na mysli nebo nás chcete lépe poznat? Napište
               nám! Jsme tu pro vás a rádi vám pomůžeme propojit váš podnik s
-              digitálním světem. Vaše myšlenky nás zajímají, tak neváhejte se s
-              námi podělit o své představy. Odpovíme vám co nejdříve!
+              digitálním světem. Odpovíme vám co nejdříve!
             </p>
-            <a href="kontakt.html" class="btn btn-primary mt-3"
-              >Kontaktujte nás</a
-            >
+            <a href="#" class="btn btn-primary mt-3">Kontaktujte nás</a>
           </div>
 
           <div class="col-md mr-4 mb-4 mb-md-0">
@@ -200,6 +288,84 @@
         </div>
       </div>
     </section>
+
+    <!-- footer -->
+    <footer class="p-4 bg-dark text-light text-center position-relative">
+      <div class="container">
+        <p>
+          made with bootstrap by <a href="https://evadob.cz/">evadob 2023</a>
+        </p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-3">
+          <i class="bi bi-arrow-up-short"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="contact-us"
+      tabindex="-1"
+      aria-labelledby="contact-usLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="contact-usLabel">
+              Kontaktujte nás
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Jméno</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Zadejte vaše jméno"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Váš e-mail</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Zadejte váš e-mail"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Zpráva</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="3"
+                  placeholder="Napište nám zprávu"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Zavřít
+            </button>
+            <button type="button" class="btn btn-primary">Odeslat</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- javascript -->
     <script
